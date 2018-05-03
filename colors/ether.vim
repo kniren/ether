@@ -1,5 +1,5 @@
 " ------------------------------------------------
-" Desc:   A grey shaded colorscheme
+" Desc:   A bold colorscheme
 " Name:   ether
 " Author: Alex Sanchez
 " Email:  kniren@gmail.com
@@ -22,7 +22,7 @@ hi VertSplit       ctermfg=8     ctermbg=none  cterm=none
 
 hi Constant        ctermfg=7     ctermbg=none  cterm=bold
 hi String          ctermfg=6     ctermbg=none  cterm=bold
-hi Character       ctermfg=3     ctermbg=none  cterm=bold
+hi Character       ctermfg=1     ctermbg=none  cterm=bold
 hi Number          ctermfg=1     ctermbg=none  cterm=bold
 hi Boolean         ctermfg=1     ctermbg=none  cterm=bold
 hi Float           ctermfg=1     ctermbg=none  cterm=bold
@@ -86,7 +86,7 @@ hi WildMenu        ctermfg=4     ctermbg=none  cterm=bold
 hi Visual          ctermfg=8     ctermbg=15    cterm=none
 hi StatusLine      ctermfg=7     ctermbg=8     cterm=bold
 hi StatusLineNC    ctermfg=0     ctermbg=8     cterm=bold
-hi CursorLine      ctermfg=none  ctermbg=none  cterm=none
+hi CursorLine      ctermfg=none  ctermbg=8     cterm=none
 hi CursorLineNr    ctermfg=none  ctermbg=none  cterm=none
 hi ColorColumn     ctermfg=none  ctermbg=8     cterm=none
 hi SignColumn      ctermfg=none  ctermbg=none  cterm=none
