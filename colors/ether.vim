@@ -11,80 +11,98 @@ if exists("syntax on")
 endif
 
 let g:color_name="ether"
+syn match Braces display '[{}()\[\]]'
 
 " Normal colors
-hi Normal          ctermfg=7
-hi Ignore          ctermfg=0
-hi Comment         ctermfg=0
-hi LineNr          ctermfg=0
-hi VertSplit       ctermfg=8  ctermbg=none
-hi Float           ctermfg=1
-hi Include         ctermfg=6
-hi Define          ctermfg=6
-hi Macro           ctermfg=6
-hi PreProc         ctermfg=2
-hi PreCondit       ctermfg=6
-hi NonText         ctermfg=0
-hi Directory       ctermfg=5
-hi SpecialKey      ctermfg=5
-hi Type            ctermfg=6
-hi String          ctermfg=2
-hi Constant        ctermfg=9
-hi Special         ctermfg=10
-hi SpecialChar     ctermfg=9
-hi Number          ctermfg=9
-hi Identifier      ctermfg=2
-hi Conditional     ctermfg=14
-hi Repeat          ctermfg=4
-hi Statement       ctermfg=6
-hi label           ctermfg=7
-hi operator        ctermfg=6
-hi keyword         ctermfg=7
-hi StorageClass    ctermfg=6
-hi Structure       ctermfg=14
-hi Typedef         ctermfg=2
-hi Function        ctermfg=6
-hi Exception       ctermfg=2
-hi Underlined      ctermfg=8
-hi Title           ctermfg=7
-hi Tag             ctermfg=8
-hi Delimiter       ctermfg=1
-hi SpecialComment  ctermfg=0
-hi Boolean         ctermfg=1
-hi MoreMsg         ctermfg=15
-hi ModeMsg         ctermfg=7
-hi Debug           ctermfg=1
-hi MatchParen      ctermfg=7  ctermbg=0
-hi Todo            ctermfg=5  ctermbg=none
-hi Error           ctermfg=1  ctermbg=none
-hi ErrorMsg        ctermfg=7  ctermbg=1
-hi WildMenu        ctermfg=7  ctermbg=0
-hi Folded          ctermfg=0  ctermbg=none
-hi FoldColumn      ctermfg=0  ctermbg=none
-hi Search          ctermfg=2  ctermbg=8
-hi IncSearch       ctermfg=7  ctermbg=5
-hi WarningMsg      ctermfg=9  ctermbg=none
-hi Question        ctermfg=7  ctermbg=none
-hi Pmenu           ctermfg=0  ctermbg=8
-hi PmenuSel        ctermfg=8
-hi Visual          ctermfg=8  ctermbg=15
-hi StatusLine      ctermfg=8  ctermbg=15
-hi StatusLineNC    ctermfg=8  ctermbg=0
-hi CursorLine                 ctermbg=8
-hi CursorLineNr               ctermbg=8
-hi ColorColumn                ctermbg=8
-hi SignColumn                 ctermbg=none
+hi Normal          ctermfg=7     ctermbg=none  cterm=none
+hi Ignore          ctermfg=7     ctermbg=none  cterm=none
+hi Comment         ctermfg=0     ctermbg=none  cterm=none
+hi LineNr          ctermfg=0     ctermbg=none  cterm=none
+hi VertSplit       ctermfg=8     ctermbg=none  cterm=none
+
+hi Constant        ctermfg=7     ctermbg=none  cterm=bold
+hi String          ctermfg=6     ctermbg=none  cterm=bold
+hi Character       ctermfg=3     ctermbg=none  cterm=bold
+hi Number          ctermfg=1     ctermbg=none  cterm=bold
+hi Boolean         ctermfg=1     ctermbg=none  cterm=bold
+hi Float           ctermfg=1     ctermbg=none  cterm=bold
+hi Include         ctermfg=0     ctermbg=none  cterm=none
+
+hi Identifier      ctermfg=7     ctermbg=none  cterm=none
+hi Function        ctermfg=7     ctermbg=none  cterm=none
+
+hi Statement       ctermfg=7     ctermbg=none  cterm=bold
+hi Conditional     ctermfg=7     ctermbg=none  cterm=bold
+hi Repeat          ctermfg=7     ctermbg=none  cterm=bold
+hi Label           ctermfg=7     ctermbg=none  cterm=bold
+hi Operator        ctermfg=7     ctermbg=none  cterm=bold
+hi Keyword         ctermfg=7     ctermbg=none  cterm=bold
+hi Exception       ctermfg=7     ctermbg=none  cterm=bold
+
+hi PreProc         ctermfg=0     ctermbg=none  cterm=none
+hi Define          ctermfg=0     ctermbg=none  cterm=none
+hi Macro           ctermfg=0     ctermbg=none  cterm=none
+hi PreProc         ctermfg=0     ctermbg=none  cterm=none
+hi PreCondit       ctermfg=0     ctermbg=none  cterm=none
+hi NonText         ctermfg=0     ctermbg=none  cterm=none
+
+hi Directory       ctermfg=6     ctermbg=none  cterm=bold
+hi SpecialKey      ctermfg=7     ctermbg=none  cterm=none
+hi MatchParen      ctermfg=1     ctermbg=none  cterm=bold
+hi Braces          ctermfg=7     ctermbg=none  cterm=bold
+
+hi Type            ctermfg=7     ctermbg=none  cterm=bold
+hi StorageClass    ctermfg=7     ctermbg=none  cterm=bold
+hi Structure       ctermfg=7     ctermbg=none  cterm=bold
+hi Typedef         ctermfg=7     ctermbg=none  cterm=bold
+
+hi Underlined      ctermfg=7     ctermbg=none  cterm=none
+hi Title           ctermfg=7     ctermbg=none  cterm=none
+
+hi Special         ctermfg=7     ctermbg=none  cterm=none
+hi SpecialChar     ctermfg=7     ctermbg=none  cterm=none
+hi Tag             ctermfg=7     ctermbg=none  cterm=none
+hi Delimiter       ctermfg=7     ctermbg=none  cterm=none
+hi SpecialComment  ctermfg=7     ctermbg=none  cterm=none
+hi Debug           ctermfg=7     ctermbg=none  cterm=none
+
+hi MoreMsg         ctermfg=7     ctermbg=none  cterm=none
+hi ModeMsg         ctermfg=7     ctermbg=none  cterm=none
+hi Todo            ctermfg=7     ctermbg=none  cterm=bold
+hi Error           ctermfg=1     ctermbg=none  cterm=none
+hi ErrorMsg        ctermfg=1     ctermbg=none  cterm=none
+hi Folded          ctermfg=0     ctermbg=none  cterm=none
+hi FoldColumn      ctermfg=7     ctermbg=none  cterm=none
+hi Search          ctermfg=4     ctermbg=none  cterm=bold
+hi IncSearch       ctermfg=7     ctermbg=4     cterm=bold
+hi WarningMsg      ctermfg=7     ctermbg=none  cterm=none
+hi Question        ctermfg=7     ctermbg=none  cterm=none
+
+hi Pmenu           ctermfg=0     ctermbg=8     cterm=none
+hi PmenuSel        ctermfg=4     ctermbg=8     cterm=bold
+hi PmenuSbar       ctermfg=0     ctermbg=8     cterm=bold
+hi WildMenu        ctermfg=4     ctermbg=none  cterm=bold
+
+hi Visual          ctermfg=8     ctermbg=15    cterm=none
+hi StatusLine      ctermfg=7     ctermbg=8     cterm=bold
+hi StatusLineNC    ctermfg=0     ctermbg=8     cterm=bold
+hi CursorLine      ctermfg=none  ctermbg=none  cterm=none
+hi CursorLineNr    ctermfg=none  ctermbg=none  cterm=none
+hi ColorColumn     ctermfg=none  ctermbg=8     cterm=none
+hi SignColumn      ctermfg=none  ctermbg=none  cterm=none
 
 " Vim specific
-hi helpNote ctermfg=6 ctermbg=none
+hi helpNote        ctermfg=6     ctermbg=none  cterm=none
+hi vimOption       ctermfg=7     ctermbg=none  cterm=none
+hi vimHiAttrib     ctermfg=1     ctermbg=none  cterm=bold
 
 " Diff lines
-hi DiffText    ctermfg=0 ctermbg=2
-hi DiffLine    ctermfg=6 ctermbg=none
-hi DiffAdd     ctermfg=2 ctermbg=none
-hi DiffDelete  ctermfg=1 ctermbg=none
-hi DiffChange  ctermfg=6 ctermbg=none
-hi DiffRemoved ctermfg=1
+hi DiffText        ctermfg=3     ctermbg=none
+hi DiffLine        ctermfg=4     ctermbg=none
+hi DiffAdd         ctermfg=2     ctermbg=none
+hi DiffDelete      ctermfg=1     ctermbg=none
+hi DiffChange      ctermfg=3     ctermbg=none
+hi DiffRemoved     ctermfg=1     ctermbg=none
 
 " Spell checking
 if version >= 700
@@ -98,41 +116,11 @@ if version >= 700
   hi SpellLocal cterm=underline
 endif
 
-" Python
-hi pythonString   ctermfg=2
-hi pythonFunction ctermfg=7
-
-" HTML
-hi htmlHead  ctermfg=7
-hi htmlTitle ctermfg=7
-hi htmlH1    ctermfg=7
-hi htmlH2    ctermfg=7
-hi htmlH3    ctermfg=7
-hi htmlH4    ctermfg=7
-hi htmlH5    ctermfg=7
-hi htmlH6    ctermfg=7
-hi htmlLink  ctermfg=4
-
 " NERDTree
 hi NERDTreeRO        ctermfg=2 ctermbg=none
 hi NERDTreeExecFile  ctermfg=2 ctermbg=none
 hi NERDTreeToggleOn  ctermbg=none
 hi NERDTreeToggleOff ctermbg=none
-
-" Markdown
-hi markdownH1               ctermfg=2
-hi markdownH2               ctermfg=2
-hi markdownH3               ctermfg=10
-hi markdownH4               ctermfg=10
-hi markdownHeadingDelimiter ctermfg=10
-hi markdownHeadingRule      ctermfg=2
-hi markdownCodeBlock        ctermfg=7
-hi markdownAutomaticLink    ctermfg=1
-hi markdownLinkText         ctermfg=6
-
-" Mutt
-hi mailSubject   ctermfg=5
-hi mailHeaderKey ctermfg=6
 
 " GitGutter
 hi GitGutterAdd          ctermfg=2
@@ -140,10 +128,10 @@ hi GitGutterChange       ctermfg=11
 hi GitGutterDelete       ctermfg=1
 hi GitGutterChangeDelete ctermfg=11
 
-" Golang
-hi goDeclaration   ctermfg=6
-hi goVar           ctermfg=6
+" Tagbar
+hi TagbarScope       ctermfg=7     ctermbg=none      cterm=bold
+hi TagbarKind        ctermfg=7     ctermbg=none      cterm=bold
+hi TagbarNestedKind  ctermfg=7     ctermbg=none      cterm=bold
 
-" Rust
-hi rustKeyword   ctermfg=6
-hi rustFuncname   ctermfg=7
+" CPP
+hi cppAccess       ctermfg=0     ctermbg=none  cterm=bold
