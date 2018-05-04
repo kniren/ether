@@ -123,10 +123,11 @@ hi NERDTreeToggleOn  ctermbg=none
 hi NERDTreeToggleOff ctermbg=none
 
 " GitGutter
-hi GitGutterAdd          ctermfg=2
-hi GitGutterChange       ctermfg=11
-hi GitGutterDelete       ctermfg=1
-hi GitGutterChangeDelete ctermfg=11
+
+hi GitGutterAdd          ctermfg=0
+hi GitGutterChange       ctermfg=0
+hi GitGutterDelete       ctermfg=0
+hi GitGutterChangeDelete ctermfg=0
 
 " Tagbar
 hi TagbarScope       ctermfg=7     ctermbg=none      cterm=bold
