@@ -95,6 +95,7 @@ hi SignColumn      ctermfg=none  ctermbg=none  cterm=none
 hi helpNote        ctermfg=6     ctermbg=none  cterm=none
 hi vimOption       ctermfg=7     ctermbg=none  cterm=none
 hi vimHiAttrib     ctermfg=1     ctermbg=none  cterm=bold
+hi vimCommentTitle ctermfg=0     ctermbg=none  cterm=bold
 
 " Diff lines
 hi DiffText        ctermfg=3     ctermbg=none
@@ -123,7 +124,6 @@ hi NERDTreeToggleOn  ctermbg=none
 hi NERDTreeToggleOff ctermbg=none
 
 " GitGutter
-
 hi GitGutterAdd          ctermfg=0
 hi GitGutterChange       ctermfg=0
 hi GitGutterDelete       ctermfg=0
