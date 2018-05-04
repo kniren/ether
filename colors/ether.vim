@@ -104,6 +104,7 @@ hi DiffAdd         ctermfg=2     ctermbg=none
 hi DiffDelete      ctermfg=1     ctermbg=none
 hi DiffChange      ctermfg=3     ctermbg=none
 hi DiffRemoved     ctermfg=1     ctermbg=none
+hi DiffAdded       ctermfg=2     ctermbg=none
 
 " Spell checking
 if version >= 700
