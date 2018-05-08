@@ -28,6 +28,10 @@ hi Boolean         ctermfg=1     ctermbg=none  cterm=bold
 hi Float           ctermfg=1     ctermbg=none  cterm=bold
 hi Include         ctermfg=0     ctermbg=none  cterm=none
 
+hi Tabline         ctermfg=0     ctermbg=none  cterm=bold
+hi TablineFill     ctermfg=7     ctermbg=none  cterm=bold
+hi TablineSel      ctermfg=7     ctermbg=none  cterm=bold
+
 hi Identifier      ctermfg=7     ctermbg=none  cterm=none
 hi Function        ctermfg=7     ctermbg=none  cterm=none
 
