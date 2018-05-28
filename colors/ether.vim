@@ -23,6 +23,7 @@ hi VertSplit       ctermfg=8     ctermbg=none  cterm=none
 hi Constant        ctermfg=7     ctermbg=none  cterm=bold
 hi String          ctermfg=6     ctermbg=none  cterm=bold
 hi Character       ctermfg=1     ctermbg=none  cterm=bold
+hi SpecialChar     ctermfg=1     ctermbg=none  cterm=bold
 hi Number          ctermfg=1     ctermbg=none  cterm=bold
 hi Boolean         ctermfg=1     ctermbg=none  cterm=bold
 hi Float           ctermfg=1     ctermbg=none  cterm=bold
@@ -142,3 +143,4 @@ hi TagbarNestedKind  ctermfg=7     ctermbg=none      cterm=bold
 " CPP
 hi cppAccess         ctermfg=0     ctermbg=none  cterm=bold
 hi cSpecialCharacter ctermfg=1     ctermbg=none  cterm=bold
+hi cSpecial          ctermfg=1     ctermbg=none  cterm=bold
