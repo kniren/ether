@@ -140,4 +140,5 @@ hi TagbarKind        ctermfg=7     ctermbg=none      cterm=bold
 hi TagbarNestedKind  ctermfg=7     ctermbg=none      cterm=bold
 
 " CPP
-hi cppAccess       ctermfg=0     ctermbg=none  cterm=bold
+hi cppAccess         ctermfg=0     ctermbg=none  cterm=bold
+hi cSpecialCharacter ctermfg=1     ctermbg=none  cterm=bold
