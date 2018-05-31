@@ -144,3 +144,24 @@ hi TagbarNestedKind  ctermfg=7     ctermbg=none      cterm=bold
 hi cppAccess         ctermfg=0     ctermbg=none  cterm=bold
 hi cSpecialCharacter ctermfg=1     ctermbg=none  cterm=bold
 hi cSpecial          ctermfg=1     ctermbg=none  cterm=bold
+
+" Markdown
+hi markdownHeadingDelimiter  ctermfg=1     ctermbg=none  cterm=bold
+hi markdownRule              ctermfg=1     ctermbg=none  cterm=bold
+hi markdownH1                ctermfg=1     ctermbg=none  cterm=bold
+hi markdownH2                ctermfg=1     ctermbg=none  cterm=bold
+hi markdownH3                ctermfg=1     ctermbg=none  cterm=bold
+hi markdownH4                ctermfg=1     ctermbg=none  cterm=bold
+hi markdownH5                ctermfg=1     ctermbg=none  cterm=bold
+hi markdownH6                ctermfg=1     ctermbg=none  cterm=bold
+hi markdownCode              ctermfg=6     ctermbg=none  cterm=bold
+hi markdownCodeDelimiter     ctermfg=6     ctermbg=none  cterm=bold
+hi markdownId                ctermfg=7     ctermbg=none  cterm=bold
+hi markdownIdDeclaration     ctermfg=7     ctermbg=none  cterm=bold
+hi markdownUrl               ctermfg=4     ctermbg=none  cterm=bold
+hi markdownLink              ctermfg=4     ctermbg=none  cterm=bold
+hi markdownLinkDelimiter     ctermfg=4     ctermbg=none  cterm=bold
+hi markdownLinkText          ctermfg=7     ctermbg=none  cterm=bold
+hi markdownLinkTextDelimiter ctermfg=4     ctermbg=none  cterm=bold
+hi markdownItalic            ctermfg=7     ctermbg=8     cterm=bold,italic
+hi markdownBold              ctermfg=7     ctermbg=none  cterm=bold
