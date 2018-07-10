@@ -73,7 +73,7 @@ hi Debug           ctermfg=7     ctermbg=none  cterm=none
 
 hi MoreMsg         ctermfg=7     ctermbg=none  cterm=none
 hi ModeMsg         ctermfg=7     ctermbg=none  cterm=none
-hi Todo            ctermfg=7     ctermbg=none  cterm=bold
+hi Todo            ctermfg=1     ctermbg=none  cterm=bold
 hi Error           ctermfg=1     ctermbg=none  cterm=none
 hi ErrorMsg        ctermfg=1     ctermbg=none  cterm=none
 hi Folded          ctermfg=0     ctermbg=none  cterm=none
@@ -141,9 +141,11 @@ hi TagbarKind        ctermfg=7     ctermbg=none      cterm=bold
 hi TagbarNestedKind  ctermfg=7     ctermbg=none      cterm=bold
 
 " CPP
-hi cppAccess         ctermfg=0     ctermbg=none  cterm=bold
-hi cSpecialCharacter ctermfg=1     ctermbg=none  cterm=bold
-hi cSpecial          ctermfg=1     ctermbg=none  cterm=bold
+hi cppAccess            ctermfg=0     ctermbg=none  cterm=bold
+hi cSpecialCharacter    ctermfg=1     ctermbg=none  cterm=bold
+hi cSpecial             ctermfg=1     ctermbg=none  cterm=bold
+hi cCustomTodoImportant ctermfg=3     ctermbg=none  cterm=bold
+hi cCustomTodoNote      ctermfg=4     ctermbg=none  cterm=bold
 
 " Markdown
 hi markdownHeadingDelimiter  ctermfg=1     ctermbg=none  cterm=bold
@@ -165,3 +167,4 @@ hi markdownLinkText          ctermfg=7     ctermbg=none  cterm=bold
 hi markdownLinkTextDelimiter ctermfg=4     ctermbg=none  cterm=bold
 hi markdownItalic            ctermfg=7     ctermbg=8     cterm=bold,italic
 hi markdownBold              ctermfg=7     ctermbg=none  cterm=bold
+hi markdownListMarker        ctermfg=4     ctermbg=none  cterm=bold
