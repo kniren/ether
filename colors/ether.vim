@@ -16,9 +16,9 @@ syn match Braces display '[{}()\[\]]'
 " Normal colors
 hi Normal          ctermfg=7     ctermbg=none  cterm=none
 hi Ignore          ctermfg=7     ctermbg=none  cterm=none
-hi Comment         ctermfg=0     ctermbg=none  cterm=none
-hi LineNr          ctermfg=0     ctermbg=none  cterm=none
-hi VertSplit       ctermfg=8     ctermbg=none  cterm=none
+hi Comment         ctermfg=8     ctermbg=none  cterm=none
+hi LineNr          ctermfg=8     ctermbg=none  cterm=none
+hi VertSplit       ctermfg=0     ctermbg=none  cterm=none
 
 hi Constant        ctermfg=7     ctermbg=none  cterm=bold
 hi String          ctermfg=6     ctermbg=none  cterm=bold
@@ -27,9 +27,9 @@ hi SpecialChar     ctermfg=1     ctermbg=none  cterm=bold
 hi Number          ctermfg=1     ctermbg=none  cterm=bold
 hi Boolean         ctermfg=1     ctermbg=none  cterm=bold
 hi Float           ctermfg=1     ctermbg=none  cterm=bold
-hi Include         ctermfg=0     ctermbg=none  cterm=none
+hi Include         ctermfg=8     ctermbg=none  cterm=none
 
-hi Tabline         ctermfg=0     ctermbg=none  cterm=bold
+hi Tabline         ctermfg=8     ctermbg=none  cterm=bold
 hi TablineFill     ctermfg=7     ctermbg=none  cterm=bold
 hi TablineSel      ctermfg=7     ctermbg=none  cterm=bold
 
@@ -44,12 +44,12 @@ hi Operator        ctermfg=7     ctermbg=none  cterm=bold
 hi Keyword         ctermfg=7     ctermbg=none  cterm=bold
 hi Exception       ctermfg=7     ctermbg=none  cterm=bold
 
-hi PreProc         ctermfg=0     ctermbg=none  cterm=none
-hi Define          ctermfg=0     ctermbg=none  cterm=none
-hi Macro           ctermfg=0     ctermbg=none  cterm=none
-hi PreProc         ctermfg=0     ctermbg=none  cterm=none
-hi PreCondit       ctermfg=0     ctermbg=none  cterm=none
-hi NonText         ctermfg=0     ctermbg=none  cterm=none
+hi PreProc         ctermfg=8     ctermbg=none  cterm=none
+hi Define          ctermfg=8     ctermbg=none  cterm=none
+hi Macro           ctermfg=8     ctermbg=none  cterm=none
+hi PreProc         ctermfg=8     ctermbg=none  cterm=none
+hi PreCondit       ctermfg=8     ctermbg=none  cterm=none
+hi NonText         ctermfg=8     ctermbg=none  cterm=none
 
 hi Directory       ctermfg=6     ctermbg=none  cterm=bold
 hi SpecialKey      ctermfg=7     ctermbg=none  cterm=none
@@ -76,31 +76,31 @@ hi ModeMsg         ctermfg=7     ctermbg=none  cterm=none
 hi Todo            ctermfg=1     ctermbg=none  cterm=bold
 hi Error           ctermfg=1     ctermbg=none  cterm=none
 hi ErrorMsg        ctermfg=1     ctermbg=none  cterm=none
-hi Folded          ctermfg=0     ctermbg=none  cterm=none
+hi Folded          ctermfg=8     ctermbg=none  cterm=none
 hi FoldColumn      ctermfg=7     ctermbg=none  cterm=none
 hi Search          ctermfg=4     ctermbg=none  cterm=bold
 hi IncSearch       ctermfg=7     ctermbg=4     cterm=bold
 hi WarningMsg      ctermfg=7     ctermbg=none  cterm=none
 hi Question        ctermfg=7     ctermbg=none  cterm=none
 
-hi Pmenu           ctermfg=0     ctermbg=8     cterm=none
-hi PmenuSel        ctermfg=4     ctermbg=8     cterm=bold
-hi PmenuSbar       ctermfg=0     ctermbg=8     cterm=bold
+hi Pmenu           ctermfg=8     ctermbg=0     cterm=none
+hi PmenuSel        ctermfg=4     ctermbg=0     cterm=bold
+hi PmenuSbar       ctermfg=8     ctermbg=0     cterm=bold
 hi WildMenu        ctermfg=4     ctermbg=none  cterm=bold
 
-hi Visual          ctermfg=8     ctermbg=15    cterm=none
-hi StatusLine      ctermfg=7     ctermbg=8     cterm=bold
-hi StatusLineNC    ctermfg=0     ctermbg=8     cterm=bold
-hi CursorLine      ctermfg=none  ctermbg=8     cterm=none
+hi Visual          ctermfg=0     ctermbg=15    cterm=none
+hi StatusLine      ctermfg=7     ctermbg=0     cterm=bold
+hi StatusLineNC    ctermfg=8     ctermbg=0     cterm=bold
+hi CursorLine      ctermfg=none  ctermbg=0     cterm=none
 hi CursorLineNr    ctermfg=none  ctermbg=none  cterm=none
-hi ColorColumn     ctermfg=none  ctermbg=8     cterm=none
+hi ColorColumn     ctermfg=none  ctermbg=0     cterm=none
 hi SignColumn      ctermfg=none  ctermbg=none  cterm=none
 
 " Vim specific
 hi helpNote        ctermfg=6     ctermbg=none  cterm=none
 hi vimOption       ctermfg=7     ctermbg=none  cterm=none
 hi vimHiAttrib     ctermfg=1     ctermbg=none  cterm=bold
-hi vimCommentTitle ctermfg=0     ctermbg=none  cterm=bold
+hi vimCommentTitle ctermfg=8     ctermbg=none  cterm=bold
 
 " Diff lines
 hi DiffText        ctermfg=3     ctermbg=none
@@ -130,10 +130,10 @@ hi NERDTreeToggleOn  ctermbg=none
 hi NERDTreeToggleOff ctermbg=none
 
 " GitGutter
-hi GitGutterAdd          ctermfg=0
-hi GitGutterChange       ctermfg=0
-hi GitGutterDelete       ctermfg=0
-hi GitGutterChangeDelete ctermfg=0
+hi GitGutterAdd          ctermfg=8
+hi GitGutterChange       ctermfg=8
+hi GitGutterDelete       ctermfg=8
+hi GitGutterChangeDelete ctermfg=8
 
 " Tagbar
 hi TagbarScope       ctermfg=7     ctermbg=none      cterm=bold
@@ -141,11 +141,12 @@ hi TagbarKind        ctermfg=7     ctermbg=none      cterm=bold
 hi TagbarNestedKind  ctermfg=7     ctermbg=none      cterm=bold
 
 " CPP
-hi cppAccess            ctermfg=0     ctermbg=none  cterm=bold
+hi cppAccess            ctermfg=8     ctermbg=none  cterm=bold
 hi cSpecialCharacter    ctermfg=1     ctermbg=none  cterm=bold
 hi cSpecial             ctermfg=1     ctermbg=none  cterm=bold
 hi cCustomTodoImportant ctermfg=3     ctermbg=none  cterm=bold
-hi cCustomTodoNote      ctermfg=4     ctermbg=none  cterm=bold
+hi cCustomTodoNote      ctermfg=6     ctermbg=none  cterm=bold
+hi cCustomTodoDebug     ctermfg=2     ctermbg=none  cterm=bold
 
 " Markdown
 hi markdownHeadingDelimiter  ctermfg=1     ctermbg=none  cterm=bold
@@ -165,6 +166,6 @@ hi markdownLink              ctermfg=4     ctermbg=none  cterm=bold
 hi markdownLinkDelimiter     ctermfg=4     ctermbg=none  cterm=bold
 hi markdownLinkText          ctermfg=7     ctermbg=none  cterm=bold
 hi markdownLinkTextDelimiter ctermfg=4     ctermbg=none  cterm=bold
-hi markdownItalic            ctermfg=7     ctermbg=8     cterm=bold,italic
+hi markdownItalic            ctermfg=7     ctermbg=0     cterm=bold,italic
 hi markdownBold              ctermfg=7     ctermbg=none  cterm=bold
 hi markdownListMarker        ctermfg=4     ctermbg=none  cterm=bold
