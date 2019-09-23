@@ -97,10 +97,14 @@ hi ColorColumn     ctermfg=none  ctermbg=0     cterm=none
 hi SignColumn      ctermfg=none  ctermbg=none  cterm=none
 
 " Vim specific
-hi helpNote        ctermfg=6     ctermbg=none  cterm=none
-hi vimOption       ctermfg=7     ctermbg=none  cterm=none
-hi vimHiAttrib     ctermfg=1     ctermbg=none  cterm=bold
-hi vimCommentTitle ctermfg=8     ctermbg=none  cterm=bold
+hi helpNote          ctermfg=6     ctermbg=none  cterm=none
+hi helpCommand       ctermfg=6     ctermbg=none  cterm=none
+hi helpExample       ctermfg=5     ctermbg=none  cterm=none
+hi helpHeader        ctermfg=7     ctermbg=none  cterm=bold
+hi helpHyperTextJump ctermfg=4     ctermbg=none  cterm=none
+hi vimOption         ctermfg=7     ctermbg=none  cterm=none
+hi vimHiAttrib       ctermfg=1     ctermbg=none  cterm=bold
+hi vimCommentTitle   ctermfg=8     ctermbg=none  cterm=bold
 
 " Diff lines
 hi DiffText        ctermfg=3     ctermbg=none
@@ -144,9 +148,6 @@ hi TagbarNestedKind  ctermfg=7     ctermbg=none      cterm=bold
 hi cppAccess            ctermfg=8     ctermbg=none  cterm=bold
 hi cSpecialCharacter    ctermfg=1     ctermbg=none  cterm=bold
 hi cSpecial             ctermfg=1     ctermbg=none  cterm=bold
-hi cCustomTodoImportant ctermfg=3     ctermbg=none  cterm=bold
-hi cCustomTodoNote      ctermfg=6     ctermbg=none  cterm=bold
-hi cCustomTodoDebug     ctermfg=2     ctermbg=none  cterm=bold
 
 " Markdown
 hi markdownHeadingDelimiter  ctermfg=1     ctermbg=none  cterm=bold
@@ -169,3 +170,38 @@ hi markdownLinkTextDelimiter ctermfg=4     ctermbg=none  cterm=bold
 hi markdownItalic            ctermfg=7     ctermbg=0     cterm=bold,italic
 hi markdownBold              ctermfg=7     ctermbg=none  cterm=bold
 hi markdownListMarker        ctermfg=4     ctermbg=none  cterm=bold
+
+" Custom comment tags
+augroup comment_tags
+    autocmd!
+    au Syntax * syn match CommentTagImportant
+                \ /\v\_.<(IMPORTANT)(\([[:alnum:]]+\))?:/hs=s+1,he=s+10
+                \ containedin=.*Comment.* contained
+    au Syntax * syn match CommentTagNote
+                \ /\v\_.<(NOTE)(\([[:alnum:]]+\))?:/hs=s+1,he=s+5
+                \ containedin=.*Comment.* contained
+    au Syntax * syn match CommentTagDebug
+                \ /\v\_.<(DEBUG)(\([[:alnum:]]+\))?:/hs=s+1,he=s+6
+                \ containedin=.*Comment.* contained
+    au Syntax * syn match CommentTagFixme
+                \ /\v\_.<(FIXME)(\([[:alnum:]]+\))?:/hs=s+1,he=s+6
+                \ containedin=.*Comment.* contained
+    au Syntax * syn match CommentTagTodo
+                \ /\v\_.<(TODO)(\([[:alnum:]]+\))?:/hs=s+1,he=s+5
+                \ containedin=.*Comment.* contained
+    au Syntax * syn match CommentTagAuthor
+                \ /\v(\([[:alnum:]]+\))/
+                \ containedin=CommentTag.* contained
+augroup END
+hi CommentTagImportant ctermfg=3 ctermbg=none cterm=bold
+hi CommentTagNote      ctermfg=6 ctermbg=none cterm=bold
+hi CommentTagDebug     ctermfg=2 ctermbg=none cterm=bold
+hi CommentTagFixme     ctermfg=0 ctermbg=1    cterm=bold
+hi CommentTagTodo      ctermfg=1 ctermbg=none cterm=bold
+hi CommentTagAuthor    ctermfg=8 ctermbg=none cterm=bold
+
+" GitGutter
+hi GitGutterAdd          ctermfg=2 ctermbg=none
+hi GitGutterChange       ctermfg=3 ctermbg=none
+hi GitGutterChangeDelete ctermfg=3 ctermbg=none
+hi GitGutterDelete       ctermfg=1 ctermbg=none
